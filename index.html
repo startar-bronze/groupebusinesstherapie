@@ -48,15 +48,12 @@
             <p>Dernières nouveautés musicales et mises à jour.</p>
             <div class="music-sales">
                 <div class="music-item">
-                    <img src="album1.jpg" alt="Album 1">
-                    <p>Artiste 1: Album 1</p>
-                    <p>Prix: <del>$20.00</del> $10.00</p>
+                    <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/DONT%20MISTAKE%20COVER%20MOCKUP.jpg" alt="Don't Mistake Cover" class="album-cover">
+                    <p>KharYsma Arafat NZABA: Don't Mistake</p>
+                    <p>Prix: 2 euros</p>
+                    <button onClick="handlePayment()">Acheter</button>
                 </div>
-                <div class="music-item">
-                    <img src="album2.jpg" alt="Album 2">
-                    <p>Artiste 2: Album 2</p>
-                    <p>Prix: <del>$25.00</del> $15.00</p>
-                </div>
+                <!-- Autres albums ici -->
             </div>
         </section>
     </main>
@@ -64,5 +61,12 @@
     <footer>
         <p>&copy; 2024 Groupe Business Thérapie. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        function handlePayment() {
+            // Redirection vers PayPal
+            window.location.href = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_BUTTON_ID';
+        }
+    </script>
 </body>
 </html>
