@@ -14,9 +14,8 @@ header {
 .logo {
     display: block;
     margin: 0 auto;
-    max-width: 120px; /* Taille ajustée pour être plus lisible */
+    max-width: 200px; /* Larger size and square shape */
     height: auto;
-    border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -100,9 +99,10 @@ button:hover {
 }
 
 .album-cover {
-    width: 200px;
+    width: 150px;
+    height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Ajoute un effet d'ombre */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 footer {
