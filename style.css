@@ -14,10 +14,10 @@ header {
 .logo {
     display: block;
     margin: 0 auto;
-    max-width: 100px; /* Taille réduite pour le logo */
+    max-width: 75px; /* Réduction de la taille du logo */
     height: auto;
-    border-radius: 50%; /* Style arrondi pour le logo */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombre autour du logo */
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -83,6 +83,25 @@ button:hover {
     color: #333;
     padding: 20px;
     text-align: center;
+}
+
+.music-sales {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.music-item {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.music-item img {
+    width: 200px;
+    border-radius: 8px;
 }
 
 footer {
