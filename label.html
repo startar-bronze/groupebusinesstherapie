@@ -14,7 +14,7 @@
             background-color: #fff;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background-color: #f7f7f7;
@@ -27,6 +27,10 @@
         h3 {
             font-size: 1.2em;
             font-weight: bold;
+            padding: 10px;
+            background-color: #d7ccc8;
+            border-radius: 5px;
+            text-align: center;
         }
         p {
             color: #4e342e; /* Marron */
@@ -51,6 +55,42 @@
             border: 1px solid #ccc;
             padding: 5px;
             border-radius: 5px;
+        }
+        .artists {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .artist-card {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            border: 2px solid #bdbdbd; /* Argenté/Diamanté */
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+        }
+        .artist-card img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        .button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #bdbdbd; /* Gris */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #9e9e9e; /* Gris plus foncé au survol */
         }
         @media (min-width: 768px) {
             .container {
@@ -84,6 +124,26 @@
     <p>Chez Groupe Business Thérapie, nous croyons que la musique est un langage universel qui a le pouvoir d'éveiller les émotions et de rassembler les individus autour d'expériences uniques. Nous œuvrons à propulser nos artistes dans une carrière internationale tout en célébrant la diversité musicale et culturelle.</p>
 
     <p>Si vous aussi, vous partagez nos valeurs pour un partenariat gagnant/gagnant et une transparence accrue dans nos chiffres, alors rejoignez-nous dans cette aventure musicale passionnante où chaque note est synonyme d'émotions et chaque rythme une innovation.</p>
+
+    <h3>Nos Artistes / Our Roster</h3>
+
+    <div class="artists">
+        <div class="artist-card">
+            <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/kharYsma%20Arafat%20NZABA%20sur%20sc%C3%A8ne%202.png?raw=true" alt="kharYsma Arafat NZABA">
+            <p>kharYsma Arafat NZABA</p>
+            <a href="https://open.spotify.com/intl-fr/artist/0woprxb5wJHNG9yeZOXeG1" class="button" target="_blank">Ecoutez</a>
+        </div>
+        <div class="artist-card">
+            <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Les%20beatfolk%20Mai%202024.jpeg?raw=true" alt="Les beatfolk">
+            <p>Les beatfolk</p>
+            <a href="https://open.spotify.com/intl-fr/artist/551gLBtoR7t2YvfaOB7DlW" class="button" target="_blank">Ecoutez</a>
+        </div>
+        <div class="artist-card">
+            <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/HD%20KOULKOUL%20TATOO%20AU%20COU.png?raw=true" alt="Koulkoul">
+            <p>Koulkoul</p>
+            <a href="https://open.spotify.com/intl-fr/artist/7Ann81hP6rjSPb8EYNHaxG" class="button" target="_blank">Ecoutez</a>
+        </div>
+    </div>
 
     <p style="text-align: center;"><a href="https://startar-bronze.github.io/groupebusinesstherapie/" class="link">Retour page d'accueil</a></p>
 </div>
