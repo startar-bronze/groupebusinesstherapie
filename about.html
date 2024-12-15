@@ -10,46 +10,118 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
         }
+
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 100px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+
         h1, h2 {
             color: #2e7d32;
         }
+
         img {
             width: 200px;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
         }
+
         .team {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
+
         .team img {
             margin-right: 20px;
         }
+
         .link {
             color: #2e7d32;
             text-decoration: none;
         }
+
+        #logo {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #google_translate_element {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200px;
+            background: repeating-linear-gradient(
+                45deg,
+                #c8e6c9,
+                #c8e6c9 10px,
+                #a5d6a7 10px,
+                #a5d6a7 20px
+            );
+        }
     </style>
-</head>
-<body>
-    <!-- Google Traduction Script -->
-    <div id="google_translate_element" style="text-align: center; padding: 10px;"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
         }
+
+        // Script for simple animated stock chart like background effect
+        window.onload = function() {
+            let canvas = document.createElement('canvas');
+            document.body.appendChild(canvas);
+            canvas.style.position = 'absolute';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            canvas.style.width = '100%';
+            canvas.style.height = '100px';
+            canvas.style.zIndex = '-1';
+            let ctx = canvas.getContext('2d');
+            let width = canvas.width = window.innerWidth;
+            let height = canvas.height = 100;
+            ctx.strokeStyle = '#2e7d32';
+            ctx.lineWidth = 2;
+            let y = height / 2;
+            ctx.beginPath();
+            ctx.moveTo(0, y);
+            for (let x = 0; x < width; x++) {
+                y = height / 2 + Math.sin(x * 0.02) * 20;
+                ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+        }
     </script>
+</head>
+<body>
+    <!-- Google Traduction Script -->
+    <div id="google_translate_element"></div>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <div id="logo">
+        <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Logo%20GBT.jpeg?raw=true" alt="Logo Groupe Business Thérapie">
+    </div>
+
+    <div class="background"></div>
 
     <div class="container">
         <h1>A PROPOS</h1>
@@ -58,16 +130,12 @@
         <p>En 2025, nous aspirons à transformer le Groupe Business Thérapie en un cabinet technologique multinational qui conjugue innovation et impact social. Nous sommes déterminés à jouer un rôle dans la réduction de la pauvreté et des inégalités grâce à nos actions associatives.</p>
         <p>Pour en savoir plus sur nos implantations, veuillez consulter notre rubrique "Mentions Légales".</p>
 
-        <div style="text-align: right;">
-            <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/PNG%20Logo%20GBT.png?raw=true" alt="Logo Groupe Business Thérapie">
-        </div>
-
         <h2>L'équipe dirigeante</h2>
 
         <div class="team">
             <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/aifaceswap_output%20(1)%202.jpg?raw=true" alt="Mr. NZABA MOUNGUENGUE Bouesse Arafat">
             <div>
-                <p><strong>Mr. NZABA MOUNGUENGUE Bouesse Arafat</strong><br>
+                <p>Mr. NZABA MOUNGUENGUE Bouesse Arafat<br>
                 Président et Dirigeant<br>
                 <a href="https://linkedin.com/in/nzabamba" class="link" target="_blank">LinkedIn Profile</a></p>
             </div>
@@ -76,7 +144,7 @@
         <div class="team">
             <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Lilly%20luna%20en%20jean.jpg?raw=true" alt="Madame Lilly Luna">
             <div>
-                <p><strong>Madame Lilly Luna</strong><br>
+                <p>Madame Lilly Luna<br>
                 Assistante et Relation Clientèle<br>
                 <a href="https://www.linkedin.com/in/lilly-luna-53a02432b" class="link" target="_blank">LinkedIn Profile</a></p>
             </div>
