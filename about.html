@@ -10,12 +10,12 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #d7ccc8;
+            background-color: #8b4513; /* Chocolat */
             line-height: 1.6;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -24,9 +24,9 @@
             color: #2e7d32;
         }
         img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+            width: 100%;
+            max-width: 200px;
+            height: auto;
             border-radius: 10px;
         }
         .team {
@@ -46,58 +46,66 @@
             padding: 20px;
         }
         #google_translate_element {
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .translate-container {
             text-align: center;
-            margin-top: 10px;
+            padding: 10px 0;
         }
     </style>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+            new google.translate.TranslateElement({pageLanguage: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-    <div id="logo">
-        <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Logo%20GBT.jpeg?raw=true" alt="Logo Groupe Business Thérapie">
-    </div>
 
+<div class="translate-container">
     <div id="google_translate_element"></div>
+</div>
 
-    <div class="container">
-        <h1>A PROPOS</h1>
-        <p>Fondé en 2012, le Groupe Business Thérapie a commencé son aventure en tant qu'association dédiée à des activités économiques. Nous avons rapidement évolué pour devenir un acteur dynamique du secteur du divertissement, avec une forte présence sur les continents africain et américain. Notre entreprise s'est distinguée par sa capacité à nouer des partenariats stratégiques, en se spécialisant dans la production et l'édition de musique, de livres, et de vidéos, tout en s'aventurant dans la mode en ligne avec des collections de vêtements et chaussures.</p>
-        
-        <p>Chez Groupe Business Thérapie, nous avons également pris le virage des investissements financiers innovants, notamment à travers notre participation active dans l'univers des cryptomonnaies, avec notre plateforme pionnière, StartarCoins. Avec notre slogan inspirant "ce n’est pas médical, c’est musical", nous exprimons notre vision unique : la musicalité, en tant qu'art, s'intègre harmonieusement à tous les domaines dans lesquels nous opérons. Elle infuse passion et créativité dans tout ce que nous entreprenons, pour vous offrir le meilleur de notre savoir-faire.</p>
-        
-        <p>En 2025, nous aspirons à transformer le Groupe Business Thérapie en un cabinet technologique multinational qui conjugue innovation et impact social. Nous sommes déterminés à jouer un rôle dans la réduction de la pauvreté et des inégalités grâce à nos actions associatives.</p>
-        
-        <p>Pour en savoir plus sur nos implantations, veuillez consulter notre rubrique "Mentions Légales".</p>
+<div id="logo">
+    <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Logo%20GBT.jpeg?raw=true" alt="Logo Groupe Business Thérapie">
+</div>
 
-        <h2>L'équipe dirigeante</h2>
+<div class="container">
+    <h1>A PROPOS</h1>
+    <p>Fondé en 2012, le Groupe Business Thérapie a commencé son aventure en tant qu'association dédiée à des activités économiques. Nous avons rapidement évolué pour devenir un acteur dynamique du secteur du divertissement, avec une forte présence sur les continents africain et américain. Notre entreprise s'est distinguée par sa capacité à nouer des partenariats stratégiques, en se spécialisant dans la production et l'édition de musique, de livres, et de vidéos, tout en s'aventurant dans la mode en ligne avec des collections de vêtements et chaussures.</p>
+    
+    <p>Chez Groupe Business Thérapie, nous avons également pris le virage des investissements financiers innovants, notamment à travers notre participation active dans l'univers des cryptomonnaies, avec notre plateforme pionnière, StartarCoins. Avec notre slogan inspirant "ce n’est pas médical, c’est musical", nous exprimons notre vision unique : la musicalité, en tant qu'art, s'intègre harmonieusement à tous les domaines dans lesquels nous opérons. Elle infuse passion et créativité dans tout ce que nous entreprenons, pour vous offrir le meilleur de notre savoir-faire.</p>
+    
+    <p>En 2025, nous aspirons à transformer le Groupe Business Thérapie en un cabinet technologique multinational qui conjugue innovation et impact social. Nous sommes déterminés à jouer un rôle dans la réduction de la pauvreté et des inégalités grâce à nos actions associatives.</p>
+    
+    <p>Pour en savoir plus sur nos implantations, veuillez consulter notre rubrique "Mentions Légales".</p>
 
-        <div class="team">
-            <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/aifaceswap_output%20(1)%202.jpg?raw=true" alt="Mr. NZABA MOUNGUENGUE Bouesse Arafat">
-            <div>
-                <p>Mr. NZABA MOUNGUENGUE Bouesse Arafat<br>
-                Président et Dirigeant<br>
-                <a href="https://linkedin.com/in/nzabamba" class="link" target="_blank">LinkedIn Profile</a></p>
-            </div>
+    <h2>L'équipe dirigeante</h2>
+
+    <div class="team">
+        <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/aifaceswap_output%20(1)%202.jpg?raw=true" alt="Mr. NZABA MOUNGUENGUE Bouesse Arafat">
+        <div>
+            <p>Mr. NZABA MOUNGUENGUE Bouesse Arafat<br>
+            Président et Dirigeant<br>
+            <a href="https://linkedin.com/in/nzabamba" class="link" target="_blank">LinkedIn Profile</a></p>
         </div>
-
-        <div class="team">
-            <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Lilly%20luna%20en%20jean.jpg?raw=true" alt="Madame Lilly Luna">
-            <div>
-                <p>Madame Lilly Luna<br>
-                Assistante et Relation Clientèle<br>
-                <a href="https://www.linkedin.com/in/lilly-luna-53a02432b" class="link" target="_blank">LinkedIn Profile</a></p>
-            </div>
-        </div>
-
-        <h2>Notre mission</h2>
-        <p>La mission de Groupe Business Thérapie est de fusionner créativité et technologie pour offrir des expériences uniques dans le divertissement et l'innovation financière, tout en travaillant activement à réduire les inégalités sociales par nos initiatives associatives.</p>
-
-        <p><a href="https://startar-bronze.github.io/groupebusinesstherapie/" class="link">Retour page d'accueil</a></p>
     </div>
+
+    <div class="team">
+        <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Lilly%20luna%20en%20jean.jpg?raw=true" alt="Madame Lilly Luna">
+        <div>
+            <p>Madame Lilly Luna<br>
+            Assistante et Relation Clientèle<br>
+            <a href="https://www.linkedin.com/in/lilly-luna-53a02432b" class="link" target="_blank">LinkedIn Profile</a></p>
+        </div>
+    </div>
+
+    <h2>Notre mission</h2>
+    <p>La mission de Groupe Business Thérapie est de fusionner créativité et technologie pour offrir des expériences uniques dans le divertissement et l'innovation financière, tout en travaillant activement à réduire les inégalités sociales par nos initiatives associatives.</p>
+
+    <p><a href="https://startar-bronze.github.io/groupebusinesstherapie/" class="link">Retour page d'accueil</a></p>
+</div>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
