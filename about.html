@@ -10,124 +10,68 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
-            background-size: cover;
-            position: relative;
-            overflow: hidden;
+            background-color: #d7ccc8;
+            line-height: 1.6;
         }
-
         .container {
             max-width: 800px;
-            margin: 100px auto;
+            margin: 0 auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: #fff;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
         h1, h2 {
             color: #2e7d32;
         }
-
         img {
             width: 200px;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
         }
-
         .team {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-
         .team img {
             margin-right: 20px;
         }
-
         .link {
             color: #2e7d32;
             text-decoration: none;
         }
-
         #logo {
             text-align: center;
             padding: 20px;
         }
-
         #google_translate_element {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 200px;
-            background: repeating-linear-gradient(
-                45deg,
-                #c8e6c9,
-                #c8e6c9 10px,
-                #a5d6a7 10px,
-                #a5d6a7 20px
-            );
+            text-align: center;
+            margin-top: 10px;
         }
     </style>
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
         }
-
-        // Script for simple animated stock chart like background effect
-        window.onload = function() {
-            let canvas = document.createElement('canvas');
-            document.body.appendChild(canvas);
-            canvas.style.position = 'absolute';
-            canvas.style.top = '0';
-            canvas.style.left = '0';
-            canvas.style.width = '100%';
-            canvas.style.height = '100px';
-            canvas.style.zIndex = '-1';
-            let ctx = canvas.getContext('2d');
-            let width = canvas.width = window.innerWidth;
-            let height = canvas.height = 100;
-            ctx.strokeStyle = '#2e7d32';
-            ctx.lineWidth = 2;
-            let y = height / 2;
-            ctx.beginPath();
-            ctx.moveTo(0, y);
-            for (let x = 0; x < width; x++) {
-                y = height / 2 + Math.sin(x * 0.02) * 20;
-                ctx.lineTo(x, y);
-            }
-            ctx.stroke();
-        }
     </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
-    <!-- Google Traduction Script -->
-    <div id="google_translate_element"></div>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <div id="logo">
         <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Logo%20GBT.jpeg?raw=true" alt="Logo Groupe Business Thérapie">
     </div>
 
-    <div class="background"></div>
+    <div id="google_translate_element"></div>
 
     <div class="container">
         <h1>A PROPOS</h1>
         <p>Fondé en 2012, le Groupe Business Thérapie a commencé son aventure en tant qu'association dédiée à des activités économiques. Nous avons rapidement évolué pour devenir un acteur dynamique du secteur du divertissement, avec une forte présence sur les continents africain et américain. Notre entreprise s'est distinguée par sa capacité à nouer des partenariats stratégiques, en se spécialisant dans la production et l'édition de musique, de livres, et de vidéos, tout en s'aventurant dans la mode en ligne avec des collections de vêtements et chaussures.</p>
+        
         <p>Chez Groupe Business Thérapie, nous avons également pris le virage des investissements financiers innovants, notamment à travers notre participation active dans l'univers des cryptomonnaies, avec notre plateforme pionnière, StartarCoins. Avec notre slogan inspirant "ce n’est pas médical, c’est musical", nous exprimons notre vision unique : la musicalité, en tant qu'art, s'intègre harmonieusement à tous les domaines dans lesquels nous opérons. Elle infuse passion et créativité dans tout ce que nous entreprenons, pour vous offrir le meilleur de notre savoir-faire.</p>
+        
         <p>En 2025, nous aspirons à transformer le Groupe Business Thérapie en un cabinet technologique multinational qui conjugue innovation et impact social. Nous sommes déterminés à jouer un rôle dans la réduction de la pauvreté et des inégalités grâce à nos actions associatives.</p>
+        
         <p>Pour en savoir plus sur nos implantations, veuillez consulter notre rubrique "Mentions Légales".</p>
 
         <h2>L'équipe dirigeante</h2>
