@@ -13,24 +13,42 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #8b4513; /* Chocolat */
-            line-height: 1.6;
+            background-color: #fff;
         }
         .container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #f7f7f7;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-top: 5px solid #2e7d32; /* Vert */
         }
         h1, h2 {
-            color: #2e7d32;
+            color: #2e7d32; /* Vert */
         }
-        img {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
+        p {
+            color: #4e342e; /* Marron */
+        }
+        .link {
+            color: #1b5e20; /* Vert foncé */
+            text-decoration: none;
+        }
+        #logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .translate-container {
+            text-align: right;
+            padding: 10px;
+            background-color: #d7ccc8; /* Brun léger */
+            border-bottom: 4px solid #8d6e63; /* Marron */
+        }
+        #google_translate_element select {
+            background-color: #f7f7f7;
+            color: #333;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
         }
         .team {
             display: flex;
@@ -38,35 +56,21 @@
             margin-bottom: 20px;
         }
         .team img {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
             margin-right: 20px;
+            border-radius: 10px;
         }
-        .link {
-            color: #2e7d32;
-            text-decoration: none;
-        }
-        #logo {
-            text-align: center;
-            padding: 20px;
-        }
-        .translate-container {
-            text-align: center;
-            padding: 5px 0;
-            font-size: 0.9em; /* Réduit la taille de la police */
-        }
-        #google_translate_element select {
-            width: auto;
-            font-size: 0.8em; /* Réduit encore plus la taille du texte dans le menu déroulant */
-            background: none; /* Supprime le fond */
-            border: none; /* Supprime les bordures */
-            color: #333; /* Assure que la couleur du texte est cohérente */
+        @media (min-width: 768px) {
+            .container {
+                border-radius: 10px;
+            }
         }
     </style>
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'fr',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
+            new google.translate.TranslateElement({pageLanguage: 'fr', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
         }
     </script>
 </head>
@@ -77,7 +81,7 @@
 </div>
 
 <div id="logo">
-    <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Logo%20GBT.jpeg?raw=true" alt="Logo Groupe Business Thérapie">
+    <img src="https://github.com/startar-bronze/groupebusinesstherapie/blob/main/Logo%20GBT.jpeg?raw=true" alt="Logo Groupe Business Thérapie" style="width:150px; height:auto;">
 </div>
 
 <div class="container">
@@ -113,7 +117,7 @@
     <h2>Notre mission</h2>
     <p>La mission de Groupe Business Thérapie est de fusionner créativité et technologie pour offrir des expériences uniques dans le divertissement et l'innovation financière, tout en travaillant activement à réduire les inégalités sociales par nos initiatives associatives.</p>
 
-    <p><a href="https://startar-bronze.github.io/groupebusinesstherapie/" class="link">Retour page d'accueil</a></p>
+    <p style="text-align: center;"><a href="https://startar-bronze.github.io/groupebusinesstherapie/" class="link">Retour page d'accueil</a></p>
 </div>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
